@@ -69,11 +69,18 @@ const Navitems = () => {
                 </ul>
               </div>
 
-              <Link to="/sign-up" className="lab-btn me-3 d-none d-md-block">
-                Create Account
-              </Link>
-              <Link to="/sign-in" className="d-none d-md-block">
-                Log In
+              <Link
+                to="/"
+                className="lab-btn me-3 d-none d-md-block"
+                onClick={() => {
+                  // Remove the "authenticated" item from localStorage
+                  localStorage.removeItem("authenticated");
+
+                  // Reload the window
+                  window.location.reload();
+                }}
+              >
+                Log out
               </Link>
             </div>
 

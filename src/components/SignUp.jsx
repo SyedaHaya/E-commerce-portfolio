@@ -35,25 +35,30 @@ export const SignUp = () => {
     const confirmPassword = form.confirmPassword.value;
     console.log(email, password, confirmPassword);
     if (password !== confirmPassword) {
-      seterrorMassage(
-        "Password does not match! Please, provide a correct password!"
-      );
-    } else {
-      seterrorMassage("");
-      createUser(email, password)
-        .then((userCredential) => {
-          const user = userCredential;
-          console.log("user Detail", user);
-          alert(`User Name: ${name}, Account creation suceessfully done!!!`);
-          // navigat(from, { replace: true })
-          navigat("/");
-        })
-        .catch((error) => {
-          alert(error);
-          console.log(error);
-        });
-    }
-  };
+        seterrorMassage(
+          "Password does not match! Please, provide a correct password!"
+        );
+      } else {
+        seterrorMassage("");
+        createUser(email, password)
+          .then((userCredential) => {
+            const user = userCredential;
+            console.log("user Detail", user);
+  
+            // Set authentication flag in local storage
+            localStorage.setItem("authenticated", "true");
+            navigat("/");
+            alert(`User Name: ${name}, Account creation suceessfully done!!!`);
+            window.location.reload()
+  
+            // navigat(from, { replace: true })
+          })
+          .catch((error) => {
+            alert(error);
+            console.log(error);
+          });
+      }
+    };
 
   return (
     <div className="login-section padding-tb section-bg">

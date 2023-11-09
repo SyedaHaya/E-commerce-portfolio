@@ -29,8 +29,11 @@ const Login = () => {
   //console.log(email, password)
   login(email, password).then((result) =>{
     const user = result.user;
+    localStorage.setItem("authenticated", "true");
+    navigat("/");
     alert("Login successfull")
-    navigat(from , {replace: true})
+    window.location.reload()
+
   }).catch((error) => {
     const errorMsg = error.massage;
     seterrorMassage("Please provide valid Email $ Password")
