@@ -4,6 +4,11 @@ const subTitle = "Choose Any Products";
 const title = "Buy Everything with Us";
 const btnText = "Get Started Now";
 import imgOne from '/src/assets/images/category/01.jpg'
+import imgTwo from '/src/assets/images/category/02.jpg'
+import imgThree from '/src/assets/images/category/03.jpg'
+import imgFour from '/src/assets/images/category/04.jpg'
+import imgFive from '/src/assets/images/category/05.jpg'
+import imgSix from '/src/assets/images/category/06.jpg'
 
 const categoryList = [
 {
@@ -13,31 +18,31 @@ iconName: 'icofont-brand-windows',
 title: 'DSLR Camera',
 },
 {
-imgUrl: '/src/assets/images/category/02.jpg',
+imgUrl: imgTwo,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Shoes',
 },
 {
-imgUrl: '/src/assets/images/category/03.jpg',
+imgUrl: imgThree,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Photography',
 },
 {
-imgUrl: '/src/assets/images/category/04.jpg',
+imgUrl: imgFour,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Formal Dress',
 },
 {
-imgUrl: '/src/assets/images/category/05.jpg',
+imgUrl: imgFive,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Colorful Bags',
 },
 {
-    imgUrl: '/src/assets/images/category/06.jpg',
+    imgUrl: imgSix,
     imgAlt: 'category rajibraj91 rajibraj',
     iconName: 'icofont-brand-windows',
     title: 'Home Decor',
