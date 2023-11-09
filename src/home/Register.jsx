@@ -1,10 +1,13 @@
 import React from 'react'
+
+
 const subTitle = "save the day";
 const title = (
-    <h3 className='title'>Join on Day Long Free Workshop For <b>Advance  <span>Mastering</span></b> On Sales</h3>
+    <h2 className='title'>Join on Day Long Free Workshop For <b>Advance  <span>Mastering</span></b> On Sales</h2>
 )
 
 const desc = "Limited Time Offer! Hurry Up";
+
 const Register = () => {
   return (
    <section className="register-section padding-tb pb-0">
@@ -24,7 +27,9 @@ const Register = () => {
            <input type="text" name='name' placeholder='Username' className='reg-input'/>
            <input type="email" name='email' placeholder='Email' className='reg-input'/>
            <input type="number" name='number' placeholder='Phone' className='reg-input'/>
-         
+          <button type='submit' className='lab-btn'>
+            Register Now
+          </button>
 
             </form>
 
