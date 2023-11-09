@@ -24,6 +24,7 @@ import { CartPage } from "./home/CartPage.jsx";
 import AuthProvider from "./contexts/AuthProvider.jsx";
 import Login from "./components/Login.jsx";
 import SignUp from "./components/SignUp.jsx";
+import NewArrival from "./arrival/NewArrival.jsx";
 
 const auth = localStorage.getItem("authenticated");
 
@@ -41,8 +42,9 @@ if (auth) {
         { path: "shop/:id", element: <SingleProduct /> },
         { path: "/cart-page", element: <CartPage /> },
         { path: "/about", element: <About /> },
+        { path: "/new-arrival", element: <NewArrival /> },
         { path: "*", element: <Home /> },
-
+      
       ],
     },
   ]);
