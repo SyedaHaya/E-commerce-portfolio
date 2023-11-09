@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
 import Ratting from '../components/Ratting';
 import { Link } from 'react-router-dom';
+import imgOne from '/src/assets/images/categoryTab/01.jpg'
+import imgTwo from '/src/assets/images/categoryTab/02.jpg'
+import imgThree from '/src/assets/images/categoryTab/03.jpg'
+import imgFour from '/src/assets/images/categoryTab/04.jpg'
+import imgFive from '/src/assets/images/categoryTab/05.jpg'
+import imgSix from '/src/assets/images/categoryTab/06.jpg'
+import imgSeven from '/src/assets/images/categoryTab/07.jpg'
+import imgEight from '/src/assets/images/categoryTab/08.jpg'
 
 
 const title = "Our Product Data";
 const ProductData = [
   {
-  imgUrl: 'src/assets/images/categoryTab/01.jpg',
+  imgUrl: imgOne,
   cate: 'Shoes',
   title: 'Nike Premier X',
   author: 'assets/images/course/author/01.jpg',
@@ -15,7 +23,7 @@ const ProductData = [
   id: 1,
   },
   {
-  imgUrl: 'src/assets/images/categoryTab/02.jpg',
+  imgUrl: imgTwo,
   cate: 'Bags',
   title: 'Asthetic Bags',
   author: 'assets/images/course/author/02.jpg',
@@ -24,7 +32,7 @@ const ProductData = [
   id: 2,
   },
   {
-    imgUrl: 'src/assets/images/categoryTab/03.jpg',
+    imgUrl: imgThree,
 cate: 'Phones',
 title: 'iPhone 12',
 author: 'src/assets/images/categoryTab/brand/apple.png',
@@ -33,7 +41,7 @@ price: '$199.00',
 id: 3,
 },
 {
-imgUrl: 'src/assets/images/categoryTab/04.jpg',
+imgUrl: imgFour,
 cate: 'Bags',
 title: 'Hiking Bag 15 Nh100',
 author: 'assets/images/course/author/04.jpg',
@@ -42,7 +50,7 @@ price: '$199.00',
 id: 4,
 },
 {
-imgUrl: 'src/assets/images/categoryTab/05.jpg',
+imgUrl: imgFive,
 cate: 'Shoes',
 title: 'Outdoor Sports Shoes',
 author: 'assets/images/course/author/05.jpg',
@@ -51,7 +59,7 @@ price: '$199.00',
 id: 5,
 },
 {
-imgUrl: 'src/assets/images/categoryTab/06.jpg',
+imgUrl: imgSix,
 cate: 'Beauty',
 title: 'COSRX Snail Mucin',
 author: 'assets/images/course/author/06.jpg',
@@ -60,7 +68,7 @@ price: '$199.00',
 id: 6,
 },
 {
-imgUrl: 'src/assets/images/categoryTab/07.jpg',
+imgUrl: imgSeven,
 cate: 'Bags',
 title: 'Look Less Chanel Bag ',
 author: 'assets/images/course/author/01.jpg',
@@ -69,7 +77,7 @@ price: '$199.00',
 id: 7,
 },
 {
-  imgUrl: 'src/assets/images/categoryTab/08.jpg',
+  imgUrl: imgEight,
   cate: 'Shoes',
   title: 'Casual Sneakers',
   author: 'assets/images/course/author/02.jpg',
