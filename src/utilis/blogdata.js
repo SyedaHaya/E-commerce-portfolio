@@ -1,6 +1,17 @@
+import imgOne from '/src/assets/images/blog/01.jpg'
+import imgTwo from '/src/assets/images/blog/02.jpg'
+import imgThree from '/src/assets/images/blog/03.jpg'
+import imgFour from '/src/assets/images/blog/04.jpg'
+import imgFive from '/src/assets/images/blog/05.jpg'
+import imgSix from '/src/assets/images/blog/06.jpg'
+import imgSeven from '/src/assets/images/blog/07.jpg'
+import imgEight from '/src/assets/images/blog/08.jpg'
+import imgNine from '/src/assets/images/blog/09.jpg'
+
+
 const blogList = [
     {   id: 1,
-        imgUrl: '/src/assets/images/blog/01.jpg',
+        imgUrl: imgOne,
         imgAlt: 'Blog Thumb',
         title: 'Business Ueporting Rouncil Them Could Plan.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -19,7 +30,7 @@ const blogList = [
     },
     {
         id: 2,
-        imgUrl: '/src/assets/images/blog/02.jpg',
+        imgUrl: imgTwo,
         imgAlt: 'Blog Thumb',
         title: 'Financial Reporting Qouncil What Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -38,7 +49,7 @@ const blogList = [
     },
     {
         id: 3,
-        imgUrl: '/src/assets/images/blog/03.jpg',
+        imgUrl: imgThree,
         imgAlt: 'Blog Thumb',
         title: 'Consulting Reporting Qounc Arei Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -57,7 +68,7 @@ const blogList = [
     },
     {
         id: 4,
-        imgUrl: '/src/assets/images/blog/04.jpg',
+        imgUrl: imgFour,
         imgAlt: 'Blog Thumb',
         title: 'Strategic Social Media and of visual design.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -76,7 +87,7 @@ const blogList = [
     },
     {
         id: 5,
-        imgUrl: '/src/assets/images/blog/05.jpg',
+        imgUrl: imgFive,
         imgAlt: 'Blog Thumb',
         title: 'Find the Right Path for your Group Course online.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -95,7 +106,7 @@ const blogList = [
     },
     {
         id: 6,
-        imgUrl: '/src/assets/images/blog/06.jpg',
+        imgUrl: imgSix,
         imgAlt: 'Blog Thumb',
         title: 'Learn by doing with Real World Projects other countries.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -114,7 +125,7 @@ const blogList = [
     },
     {
         id: 7,
-        imgUrl: '/src/assets/images/blog/07.jpg',
+        imgUrl: imgSeven,
         imgAlt: 'Blog Thumb',
         title: 'The Importance Of Intrinsic for Students.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -133,7 +144,7 @@ const blogList = [
     },
     {
         id: 8,
-        imgUrl: '/src/assets/images/blog/08.jpg',
+        imgUrl: imgEight,
         imgAlt: 'Blog Thumb',
         title: 'A Better Alternative To Grading Student Writing.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -152,7 +163,7 @@ const blogList = [
     },
     {
         id: 9,
-        imgUrl: '/src/assets/images/blog/09.jpg',
+        imgUrl: imgNine,
         imgAlt: 'Blog Thumb',
         title: 'The Challenge Global Learning In Public Education.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
