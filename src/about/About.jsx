@@ -34,6 +34,9 @@ const aboutList = [
   },
 ];
 
+import aboutOne from "/src/assets/images/about/01.jpg"
+import aboutTwo from "/src/assets/images/about/02.jpg"
+
 const About = () => {
   return (
     <div>
@@ -44,10 +47,10 @@ const About = () => {
             <div className="col">
               <div className="about-left">
                 <div className="about-thumb">
-                  <img src="/src/assets/images/about/01.jpg" alt="" />
+                  <img src={aboutOne} alt="" />
                 </div>
                 <div className="abs-thumb">
-                  <img src="/src/assets/images/about/02.jpg" alt="" />
+                  <img src={aboutTwo} alt="" />
                 </div>
                 <div className="about-left-content">
                   <h3>{year}</h3>

@@ -5,9 +5,9 @@ import Navitems from "./components/Navitems";
 import Footer from "./components/Footer";
 
 function App() {
-  const auth = localStorage.getItem("authenticated");
+  // const auth = localStorage.getItem("authenticated");
 
-  return auth ? (
+  return (
     <>
       <Navitems />
       <div className="min-vh-100">
@@ -15,11 +15,22 @@ function App() {
       </div>
       <Footer />
     </>
-  ) : (
-    <div className="min-vh-100">
-      <Outlet />
-    </div>
+
   );
+
+  // return auth ? (
+  //   <>
+  //     <Navitems />
+  //     <div className="min-vh-100">
+  //       <Outlet />
+  //     </div>
+  //     <Footer />
+  //   </>
+  // ) : (
+  //   <div className="min-vh-100">
+  //     <Outlet />
+  //   </div>
+  // );
 }
 
 export default App;

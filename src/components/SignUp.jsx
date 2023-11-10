@@ -47,7 +47,7 @@ export const SignUp = () => {
   
             // Set authentication flag in local storage
             localStorage.setItem("authenticated", "true");
-            navigat("/");
+            navigat("/new-arrival");
             alert(`User Name: ${name}, Account creation suceessfully done!!!`);
             window.location.reload()
   

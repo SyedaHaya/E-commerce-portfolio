@@ -54,7 +54,9 @@ if (auth) {
       path: "/",
       element: <App />,
       children: [
-        { path: "/", element: <Login /> },
+        { path: "/", element: <Home /> },
+        { path: "/blog", element: <Blog /> },
+        { path: "/about", element: <About /> },
         { path: "/sign-in", element: <Login /> },
         { path: "/sign-up", element: <SignUp /> },
         { path: "*", element: <Login /> },

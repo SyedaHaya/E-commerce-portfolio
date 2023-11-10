@@ -30,7 +30,7 @@ const Login = () => {
   login(email, password).then((result) =>{
     const user = result.user;
     localStorage.setItem("authenticated", "true");
-    navigat("/");
+    navigat("/new-arrival");
     alert("Login successfull")
     window.location.reload()
 
