@@ -19,6 +19,8 @@ const Navitems = () => {
       setHeaderFixed(false);
     }
   });
+  const auth = localStorage.getItem("authenticated");
+  console.log("auth on nav items", auth)
 
   return (
     <header
@@ -69,19 +71,37 @@ const Navitems = () => {
                 </ul>
               </div>
 
-              <Link
-                to="/"
-                className="lab-btn me-3 d-none d-md-block"
-                onClick={() => {
-                  // Remove the "authenticated" item from localStorage
-                  localStorage.removeItem("authenticated");
+              {auth ? (
+                <Link
+                  to="/"
+                  className="lab-btn me-3 d-none d-md-block"
+                  onClick={() => {
+                    // Remove the "authenticated" item from localStorage
+                    localStorage.removeItem("authenticated");
 
-                  // Reload the window
-                  window.location.reload();
-                }}
-              >
-                Log out
-              </Link>
+                    // Reload the window
+                    window.location.reload();
+                  }}
+                >
+                  Log out
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/sign-up"
+                    className="lab-btn me-3 d-none d-md-block"
+                  >
+                    Create Account
+                  </Link>
+
+                  <Link
+                    to="/sign-in"
+                    className="lab-btn me-3 d-none d-md-block"
+                  >
+                    Login
+                  </Link>
+                </>
+              )}
             </div>
 
             <div
